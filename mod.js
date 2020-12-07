@@ -1,4 +1,4 @@
-import walk from './lib/walk';
+import walk from './lib/walk.js';
 
 const postcssNesting = () => {
 	return {
