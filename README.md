@@ -33,29 +33,13 @@ selector nesting. So deprecating nested at-rules has been temporarily delayed.
 
 ## Usage
 
-Add [PostCSS Nesting] to your project:
-
-```bash
-npm install postcss-nesting --save-dev
-```
-
-Use [PostCSS Nesting] to process your CSS:
-
-```js
-import postcssNesting from "https://cdn.jsdelivr.net/gh/lumeland/postcss-nesting/mod.js";
-
-postcssNesting.process(YOUR_CSS /*, processOptions, pluginOptions */);
-```
-
-Or use it as a [PostCSS] plugin:
+Use [PostCSS Nesting] as a [PostCSS] plugin:
 
 ```js
 import postcss from "https://deno.land/x/postcss/mod.js";
 import postcssNesting from "https://cdn.jsdelivr.net/gh/lumeland/postcss-nesting/mod.js";
 
-postcss([
-  postcssNesting(/* pluginOptions */)
-]).process(YOUR_CSS /*, processOptions */);
+await postcss([postcssNesting]).process(YOUR_CSS /*, processOptions */);
 ```
 
 [css-img]: https://cssdb.org/badge/nesting-rules.svg
