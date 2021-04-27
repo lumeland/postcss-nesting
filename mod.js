@@ -1,14 +1,12 @@
 import walk from "./lib/walk.js";
 
-const postcssNesting = () => {
+export default function postcssNesting() {
   return {
     postcssPlugin: "postcss-nesting",
     Once(root) {
       walk(root);
     },
   };
-};
+}
 
 postcssNesting.postcss = true;
-
-export default postcssNesting;
